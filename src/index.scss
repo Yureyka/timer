@@ -31,11 +31,12 @@ body {
   border-radius: 7px;
   background-color: #fff;
   font-size: 20px;
+  cursor: pointer;
   transition: background-color .2s ease-in-out;
 }
 
 .timer {
-  width: 600px;
+  width: 500px;
   height: 300px;
   padding: 16px;
   background-color: #fff;

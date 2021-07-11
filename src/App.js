@@ -3,7 +3,7 @@ import { Button } from "./Button";
 import { Display } from "./Display";
 
 export const App = () => {
-    const [time, setTime] = useState(100);
+    const [time, setTime] = useState(30);
     const [isCountdown, setIsCountdown] = useState(false);
     const [timer, setTimer] = useState();
 
@@ -36,10 +36,10 @@ export const App = () => {
             <div className="timer">
                 <Display className="timer__display" time={time} />
                 <div className="timer__add-options">
-                    <Button className="timer__add-btn" text="+1" onClick={() => setTime((prev) => prev + 5)} />
-                    <Button className="timer__add-btn" text="+5" onClick={() => setTime((prev) => prev + 5)} />
-                    <Button className="timer__add-btn" text="+10" onClick={() => setTime((prev) => prev + 10)} />
-                    <Button className="timer__add-btn" text="+15" onClick={() => setTime((prev) => prev + 15)} />
+                    <Button className="timer__add-btn" text="+1" onClick={() => setTime((prev) => prev + 1 * 60)} />
+                    <Button className="timer__add-btn" text="+5" onClick={() => setTime((prev) => prev + 5 * 60)} />
+                    <Button className="timer__add-btn" text="+10" onClick={() => setTime((prev) => prev + 10 * 60)} />
+                    <Button className="timer__add-btn" text="+15" onClick={() => setTime((prev) => prev + 15 * 60)} />
                 </div>
                 <div className="timer__options">
                     <Button className="timer__start-btn" text={isCountdown ? "Stop" : "Start"} onClick={handleToggleTimer} />
