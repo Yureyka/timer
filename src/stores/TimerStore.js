@@ -1,7 +1,7 @@
 import { makeAutoObservable, action, reaction } from "mobx";
 
 class TimerStore {
-    time = 3;
+    time = 30;
     isCountdown = false;
     timer = undefined;
     isFinish = false;

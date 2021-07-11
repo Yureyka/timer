@@ -9,7 +9,7 @@ const _TimerPanel = ({ timerStore }) => {
     return (
         <React.Fragment>
             <div className="timer__add-options">
-                <Button className="timer__add-btn" text="+1" onClick={() => addTime(1 * 3)} />
+                <Button className="timer__add-btn" text="+1" onClick={() => addTime(1 * 60)} />
                 <Button className="timer__add-btn" text="+5" onClick={() => addTime(5 * 60)} />
                 <Button className="timer__add-btn" text="+10" onClick={() => addTime(10 * 60)} />
                 <Button className="timer__add-btn" text="+15" onClick={() => addTime(15 * 60)} />
